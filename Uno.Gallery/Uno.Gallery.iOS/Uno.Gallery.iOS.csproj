@@ -174,6 +174,7 @@
     <BundleResource Include="Resources\SplashScreen%403x.png" />
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\Fonts\roboto.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -182,7 +183,7 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-	  <BundleResource Include="Resources\Fonts\uno-fluentui-assets.ttf" />
+    <BundleResource Include="Resources\Fonts\uno-fluentui-assets.ttf" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="nventive.Nimue.Application.Building.Light">
