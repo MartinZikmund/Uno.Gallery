@@ -33,7 +33,8 @@
 							 IsSettingsVisible="False"
 							 IsBackButtonVisible="Collapsed"
 							 IsBackEnabled="False"
-							 IsTabStop="False">
+							 IsTabStop="False"
+                             DisplayModeChanged="NavigationViewControl_DisplayModeChanged">
 			<muxc:NavigationView.PaneHeader>
 				<Grid>
 					<!-- Image -->

@@ -157,5 +157,21 @@ namespace Uno.Gallery
 
 			return true;
 		}
-	}
+
+        private void NavigationViewControl_DisplayModeChanged(MUXC.NavigationView sender, MUXC.NavigationViewDisplayModeChangedEventArgs args)
+        {
+			if (args.DisplayMode == MUXC.NavigationViewDisplayMode.Expanded)
+			{
+				// When transitioning to Expanded mode, we want to keep the pane expanded
+				// hence the toggle button is hidden and pane force-opened.
+				sender.IsPaneToggleButtonVisible = false;
+				sender.IsPaneOpen = true;
+			}
+			else if (args.DisplayMode == MUXC.NavigationViewDisplayMode.Minimal)
+			{
+				// Toggle button should be shown again.
+				sender.IsPaneToggleButtonVisible = true;
+			}
+        }
+    }
 }
