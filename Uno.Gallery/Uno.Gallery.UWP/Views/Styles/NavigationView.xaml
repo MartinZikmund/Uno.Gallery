@@ -1549,7 +1549,7 @@
 										<Setter Target="BackgroundBorder.Background" Value="{ThemeResource NavigationViewItemBackgroundPointerOver}" />
 										<Setter Target="RevealBorder.BorderBrush" Value="{ThemeResource NavigationViewItemBorderBrushPointerOver}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource NavigationViewItemForegroundPointerOver}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource NavigationViewItemForegroundPointerOver}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Aqua" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="Pressed">
@@ -1559,7 +1559,7 @@
 										<Setter Target="BackgroundBorder.Background" Value="{ThemeResource NavigationViewItemBackgroundPressed}" />
 										<Setter Target="RevealBorder.BorderBrush" Value="{ThemeResource NavigationViewItemBorderBrushPressed}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource NavigationViewItemForegroundPressed}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource NavigationViewItemForegroundPressed}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Green" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="Selected">
@@ -1568,7 +1568,7 @@
 										<contract4Present:Setter Target="RevealBorder.BorderBrush"
 																 Value="{ThemeResource NavigationViewItemBorderBrushSelected}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource NavigationViewItemForegroundSelected}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource NavigationViewItemForegroundSelected}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Orange" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="PointerOverSelected">
@@ -1578,7 +1578,7 @@
 										<Setter Target="BackgroundBorder.Background" Value="{ThemeResource NavigationViewItemBackgroundSelectedPointerOver}" />
 										<Setter Target="RevealBorder.BorderBrush" Value="{ThemeResource NavigationViewItemBorderBrushSelectedPointerOver}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource NavigationViewItemForegroundSelectedPointerOver}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource NavigationViewItemForegroundSelectedPointerOver}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Red" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="PressedSelected">
@@ -1588,7 +1588,7 @@
 										<Setter Target="BackgroundBorder.Background" Value="{ThemeResource NavigationViewItemBackgroundSelectedPressed}" />
 										<Setter Target="RevealBorder.BorderBrush" Value="{ThemeResource NavigationViewItemBorderBrushSelectedPressed}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource NavigationViewItemForegroundSelectedPressed}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource NavigationViewItemForegroundSelectedPressed}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Yellow" />
 									</VisualState.Setters>
 								</VisualState>
 							</VisualStateGroup>
@@ -1693,6 +1693,7 @@
 
 								<ContentPresenter x:Name="ContentPresenter"
 												  Grid.Column="1"
+                                                  Foreground="Black"
 												  Margin="{ThemeResource NavigationViewItemContentPresenterMargin}"
 												  ContentTransitions="{TemplateBinding ContentTransitions}"
 												  ContentTemplate="{TemplateBinding ContentTemplate}"
@@ -2240,7 +2241,7 @@
 									<VisualState.Setters>
 										<Setter Target="LayoutRoot.Background" Value="{ThemeResource TopNavigationViewItemRevealBackgroundFocused}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource TopNavigationViewItemRevealIconForegroundFocused}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource TopNavigationViewItemRevealContentForegroundFocused}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Red" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="Unfocused" />
@@ -2384,35 +2385,35 @@
 									<VisualState.Setters>
 										<Setter Target="LayoutRoot.Background" Value="{ThemeResource NavigationViewItemBackgroundPointerOver}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource NavigationViewItemForegroundPointerOver}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource NavigationViewItemForegroundPointerOver}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Aqua" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="Pressed">
 									<VisualState.Setters>
 										<Setter Target="LayoutRoot.Background" Value="{ThemeResource NavigationViewItemBackgroundPressed}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource NavigationViewItemForegroundPressed}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource NavigationViewItemForegroundPressed}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Yellow" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="Selected">
 									<VisualState.Setters>
 										<Setter Target="LayoutRoot.Background" Value="{ThemeResource NavigationViewItemBackgroundSelected}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource NavigationViewItemForegroundSelected}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource NavigationViewItemForegroundSelected}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Red" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="PointerOverSelected">
 									<VisualState.Setters>
 										<Setter Target="LayoutRoot.Background" Value="{ThemeResource NavigationViewItemBackgroundSelectedPointerOver}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource NavigationViewItemForegroundPointerOver}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource NavigationViewItemForegroundPointerOver}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Blue" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="PressedSelected">
 									<VisualState.Setters>
 										<Setter Target="LayoutRoot.Background" Value="{ThemeResource NavigationViewItemBackgroundSelectedPressed}" />
 										<Setter Target="Icon.Foreground" Value="{ThemeResource NavigationViewItemForegroundPressed}" />
-										<Setter Target="ContentPresenter.Foreground" Value="{ThemeResource NavigationViewItemForegroundPressed}" />
+										<Setter Target="ContentPresenter.Foreground" Value="Green" />
 									</VisualState.Setters>
 								</VisualState>
 							</VisualStateGroup>

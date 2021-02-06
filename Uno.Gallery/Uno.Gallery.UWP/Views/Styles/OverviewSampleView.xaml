@@ -10,7 +10,7 @@
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="local:OverviewSampleView">
-					<Grid CornerRadius="4"
+					<Grid 
 						  Background="{StaticResource MaterialSurfaceBrush}"
 						  BorderBrush="{StaticResource DividerBrush}"
 						  BorderThickness="1"

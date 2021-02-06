@@ -198,15 +198,15 @@ namespace Uno.Gallery
 			{
 				// gallery#107: on uwp and uno, deselecting a NVI by selecting another NVI will leave the former in the "Selected" state
 				// to workaround this, we force reset the visual state when IsSelected becomes false
-				nvi.RegisterPropertyChangedCallback(MUXC.NavigationViewItemBase.IsSelectedProperty, (s, e) =>
-				{
-					if (!nvi.IsSelected)
-					{
-						// depending on the DisplayMode, a NVIP may or may not be used.
-						var nvip = VisualTreeHelperEx.GetFirstDescendant<MUXCP.NavigationViewItemPresenter>(nvi, x => x.Name == "NavigationViewItemPresenter");
-						VisualStateManager.GoToState((Control)nvip ?? nvi, "Normal", true);
-					}
-				});
+				//nvi.RegisterPropertyChangedCallback(MUXC.NavigationViewItemBase.IsSelectedProperty, (s, e) =>
+				//{
+				//	if (!nvi.IsSelected)
+				//	{
+				//		// depending on the DisplayMode, a NVIP may or may not be used.
+				//		var nvip = VisualTreeHelperEx.GetFirstDescendant<MUXCP.NavigationViewItemPresenter>(nvi, x => x.Name == "NavigationViewItemPresenter");
+				//		VisualStateManager.GoToState((Control)nvip ?? nvi, "Normal", true);
+				//	}
+				//});
 			}
 		}
 

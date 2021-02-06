@@ -12,6 +12,11 @@ namespace Uno.Gallery
 	{
 		private const string ViewButtonPartName = "PART_ViewButton";
 
+        public OverviewSampleView()
+        {
+			this.DefaultStyleKey = typeof(OverviewSampleView);
+        }
+
 		public Type SamplePageType
 		{
 			get { return (Type)GetValue(SamplePageTypeProperty); }

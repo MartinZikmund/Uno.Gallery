@@ -27,8 +27,8 @@
 			<DataTemplate>
 				<StackPanel>
 					
-					<!-- Button -->
-					<local:OverviewSampleView SamplePageType="samples:ButtonSamplePage">
+					<!-- Button -->                    
+                    <local:OverviewSampleView SamplePageType="samples:ButtonSamplePage">
 						<StackPanel Spacing="8">
 
 							<Button Content="CONTAINED"
@@ -45,7 +45,7 @@
 						</StackPanel>
 					</local:OverviewSampleView>
 
-					<!-- TextBox -->
+					<!-- TextBox --><!--
 					<local:OverviewSampleView SamplePageType="samples:TextBoxSamplePage">
 						<StackPanel Spacing="8">
 
@@ -75,7 +75,7 @@
 						</StackPanel>
 					</local:OverviewSampleView>
 
-					<!-- CheckBox -->
+					--><!-- CheckBox --><!--
 					<local:OverviewSampleView SamplePageType="samples:CheckBoxSamplePage">
 						<StackPanel Spacing="8">
 
@@ -94,7 +94,7 @@
 						</StackPanel>
 					</local:OverviewSampleView>
 
-					<!-- RadioButton -->
+					--><!-- RadioButton --><!--
 					<local:OverviewSampleView SamplePageType="samples:RadioButtonSamplePage">
 						<StackPanel Spacing="8">
 							
@@ -107,7 +107,7 @@
 						</StackPanel>
 					</local:OverviewSampleView>
 
-					<!-- ToggleSwitch -->
+					--><!-- ToggleSwitch --><!--
 					<local:OverviewSampleView SamplePageType="samples:ToggleSwitchSamplePage">
 						<StackPanel Spacing="8">
 							
@@ -119,7 +119,7 @@
 										  IsEnabled="False"
 										  Style="{StaticResource MaterialToggleSwitchStyle}" />
 						</StackPanel>
-					</local:OverviewSampleView>
+					</local:OverviewSampleView>-->
 				</StackPanel>
 			</DataTemplate>
 		</local:SamplePageLayout.MaterialTemplate>

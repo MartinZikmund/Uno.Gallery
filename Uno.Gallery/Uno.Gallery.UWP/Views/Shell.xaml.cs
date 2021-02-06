@@ -160,18 +160,29 @@ namespace Uno.Gallery
 
         private void NavigationViewControl_DisplayModeChanged(MUXC.NavigationView sender, MUXC.NavigationViewDisplayModeChangedEventArgs args)
         {
-			if (args.DisplayMode == MUXC.NavigationViewDisplayMode.Expanded)
-			{
-				// When transitioning to Expanded mode, we want to keep the pane expanded
-				// hence the toggle button is hidden and pane force-opened.
-				sender.IsPaneToggleButtonVisible = false;
-				sender.IsPaneOpen = true;
-			}
-			else if (args.DisplayMode == MUXC.NavigationViewDisplayMode.Minimal)
-			{
-				// Toggle button should be shown again.
-				sender.IsPaneToggleButtonVisible = true;
-			}
+
         }
+
+        private void NavViewToggleButton_Click(object sender, RoutedEventArgs e)
+        {
+			NavigationViewControl.PaneDisplayMode = MUXC.NavigationViewPaneDisplayMode.Left;
+
+
+			Debug.WriteLine("Before IsPaneVisible" + NavigationViewControl.IsPaneVisible);
+			Debug.WriteLine("PaneDisplayMode" + NavigationViewControl.PaneDisplayMode);
+			Debug.WriteLine("IsPaneOpen" + NavigationViewControl.IsPaneOpen);
+			if (NavigationViewControl.PaneDisplayMode == MUXC.NavigationViewPaneDisplayMode.LeftMinimal)
+            {
+				NavigationViewControl.IsPaneOpen = !NavigationViewControl.IsPaneOpen;
+            }
+			else if (NavigationViewControl.PaneDisplayMode == MUXC.NavigationViewPaneDisplayMode.Left)
+			{
+				NavigationViewControl.IsPaneVisible = !NavigationViewControl.IsPaneVisible;
+				NavigationViewControl.IsPaneOpen = NavigationViewControl.IsPaneVisible;
+			}
+			Debug.WriteLine("After IsPaneVisible" + NavigationViewControl.IsPaneVisible);
+			Debug.WriteLine("PaneDisplayMode" + NavigationViewControl.PaneDisplayMode);
+			Debug.WriteLine("IsPaneOpen" + NavigationViewControl.IsPaneOpen);
+		}
     }
 }
